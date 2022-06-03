@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../constants.dart';
 import 'coded_text.dart';
 
@@ -7,6 +6,7 @@ class HomeBanner extends StatelessWidget {
   const HomeBanner({
     Key? key,
   }) : super(key: key);
+
 
   @override
   Widget build(BuildContext context) {

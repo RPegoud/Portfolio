@@ -1,16 +1,21 @@
-
 class Project {
-  final String? title, description;
+  final String title, description;
+  final String imagePath;
 
-  Project({
-    this.title,
-    this.description,
-  });
+  Project(
+      {required this.title,
+      required this.description,
+      required this.imagePath});
 }
 
 List<Project> projects_list = [
   Project(
-    title: 'Complete data science workflow',
-    description: 'API calls, Data exploration, Data cleaning, Model selection and validation',
-  )
+      title: 'Data science workflow',
+      description:
+          'API calls, exploration, cleaning, Model selection and validation',
+      imagePath: 'images/lights.jpg'),
+  Project(
+      title: 'Fitness and nutrition App',
+      description: 'Building an interactive fitness app with Flutter',
+      imagePath: 'images/nutrition.jpg')
 ];

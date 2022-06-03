@@ -26,6 +26,12 @@ class Coding extends StatelessWidget {
           percentage: 0.75,
         ),
         AnimatedLinearProgress(
+          label: 'R',
+          level: 'Proficient',
+          color: Colors.orangeAccent.shade400,
+          percentage: 0.7,
+        ),
+        AnimatedLinearProgress(
           label: 'SQL',
           level: 'Intermediate',
           color: Colors.orangeAccent.shade400,

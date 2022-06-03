@@ -2,16 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/constants.dart';
 import 'package:portfolio/screens/components/socials.dart';
 
-import 'area_info_text.dart';
-import 'coding.dart';
-import 'cv.dart';
-import 'my_info.dart';
-import 'languages.dart';
+import '../components/area_info_text.dart';
+import '../components/coding.dart';
+import '../components/cv.dart';
+import '../components/my_info.dart';
+import '../components/languages.dart';
 
 class SideMenu extends StatelessWidget {
   const SideMenu({
     Key? key,
   }) : super(key: key);
+
 
   @override
   Widget build(BuildContext context) {
@@ -21,6 +22,7 @@ class SideMenu extends StatelessWidget {
           const MyInfo(),
           Expanded(
             child: SingleChildScrollView(
+              controller: ScrollController(),
               padding: const EdgeInsets.all(defaultPadding),
               child: Column(
                 children: const [
@@ -43,7 +45,3 @@ class SideMenu extends StatelessWidget {
     );
   }
 }
-
-
-
-
