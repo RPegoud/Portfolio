@@ -4,19 +4,21 @@ import 'package:portfolio/screens/main_screen.dart';
 
 import '../components/homeBanner.dart';
 import '../components/project_cards.dart';
-import '../components/recommendations.dart';
+import '../components/recommendation_card.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen(
-      {Key? key,
-      required this.bannerScrollController,
-      required this.mainPageScrollController,
-      required this.listViewScrollController})
-      : super(key: key);
+  const HomeScreen({
+    Key? key,
+    required this.bannerScrollController,
+    required this.mainPageScrollController,
+    required this.listViewScrollController,
+    required this.recommendationScrollController,
+  }) : super(key: key);
 
   final ScrollController bannerScrollController,
       mainPageScrollController,
-      listViewScrollController;
+      listViewScrollController,
+      recommendationScrollController;
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +39,7 @@ class HomeScreen extends StatelessWidget {
                   mainPageScrollController: mainPageScrollController,
                   listViewScrollController: listViewScrollController),
               const Divider(),
-              const Recommendations(),
+              RecommandationListView(recommendationScrollController: recommendationScrollController),
             ],
           ),
         ),
@@ -45,5 +47,3 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
-
-

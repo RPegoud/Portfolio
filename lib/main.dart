@@ -19,7 +19,8 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   late ScrollController bannerScrollController,
       mainPageScrollController,
-      listViewScrollController;
+      listViewScrollController,
+      recommendationScrollController;
 
   @override
   void initState() {
@@ -27,6 +28,7 @@ class _MyAppState extends State<MyApp> {
     bannerScrollController = ScrollController();
     mainPageScrollController = ScrollController();
     listViewScrollController = ScrollController();
+    recommendationScrollController = ScrollController();
   }
 
   @override
@@ -49,8 +51,8 @@ class _MyAppState extends State<MyApp> {
       home: HomeScreen(
         bannerScrollController: bannerScrollController,
         mainPageScrollController: mainPageScrollController,
-        listViewScrollController: listViewScrollController
-
+        listViewScrollController: listViewScrollController,
+        recommendationScrollController: recommendationScrollController,
       ),
     );
   }

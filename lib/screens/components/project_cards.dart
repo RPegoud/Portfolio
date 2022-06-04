@@ -62,7 +62,7 @@ class ProjectCards extends StatelessWidget {
                               decoration: BoxDecoration(
                                   color: darkColor.withOpacity(0.9),
                                   borderRadius: BorderRadius.circular(10)),
-                              width: 310,
+                              width: 300,
                               child: Padding(
                                 padding: const EdgeInsets.symmetric(
                                     vertical: defaultPadding / 2),
@@ -84,11 +84,14 @@ class ProjectCards extends StatelessWidget {
                                     SizedBox(
                                       height: 40,
                                       width: 300,
-                                      child: Text(
-                                        projects_list[index].description,
-                                        style: const TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 14.0),
+                                      child: Padding(
+                                        padding: const EdgeInsets.symmetric(horizontal: defaultPadding/2),
+                                        child: Text(
+                                          projects_list[index].description,
+                                          style: const TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 14.0),
+                                        ),
                                       ),
                                     )
                                   ],
