@@ -3,6 +3,8 @@ import 'package:portfolio/constants.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/screens/home/home_screen.dart';
 
+import 'scrollBehaviour.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -43,6 +45,7 @@ class _MyAppState extends State<MyApp> {
               bodyText2: const TextStyle(color: bodyTextColor),
             ),
       ),
+      scrollBehavior: MyCustomScrollBehavior(),
       home: HomeScreen(
         bannerScrollController: bannerScrollController,
         mainPageScrollController: mainPageScrollController,

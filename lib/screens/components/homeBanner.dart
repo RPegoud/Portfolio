@@ -34,11 +34,11 @@ class HomeBanner extends StatelessWidget {
                 CodeAnimatedText(
                   language: "python",
                   text:
-                      "Collecting, Exploring, Cleaning, Modelling, Adding value",
+                      "Collecting Data, Exploring, Cleaning, Modelling, Adding value",
                   color: Colors.greenAccent.shade400,
                 ),
                 const CodeAnimatedText(
-                  language: "flutter",
+                  language: "flutter  ",
                   text: "Building interactive apps and websites",
                   color: primaryLightBlue,
                 ),

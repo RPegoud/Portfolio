@@ -17,5 +17,9 @@ List<Project> projects_list = [
   Project(
       title: 'Fitness and nutrition App',
       description: 'Building an interactive fitness app with Flutter',
-      imagePath: 'images/nutrition.jpg')
+      imagePath: 'images/nutrition.jpg'),
+  Project(
+      title: 'Data Science Internship',
+      description: 'Data analysis and NLP using Bert',
+      imagePath: 'images/CEWE-logo.jpg'),
 ];
