@@ -20,6 +20,21 @@ List<Project> projects_list = [
       imagePath: 'images/nutrition.jpg'),
   Project(
       title: 'Data Science Internship',
-      description: 'Data analysis, NLP classification using Bert and Aspect Base Sentiment Analysis',
+      description:
+          'Data analysis, NLP classification using Bert and Aspect Base Sentiment Analysis',
+      imagePath: 'images/CEWE-logo.jpg'),
+  Project(
+      title: 'Data science workflow',
+      description:
+          'API calls, exploration, cleaning, Model selection and validation',
+      imagePath: 'images/spotify.jpg'),
+      Project(
+      title: 'Fitness and nutrition App',
+      description: 'Building an interactive fitness app with Flutter',
+      imagePath: 'images/nutrition.jpg'),
+  Project(
+      title: 'Data Science Internship',
+      description:
+          'Data analysis, NLP classification using Bert and Aspect Base Sentiment Analysis',
       imagePath: 'images/CEWE-logo.jpg'),
 ];

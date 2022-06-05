@@ -15,11 +15,13 @@ class HomeBanner extends StatelessWidget {
       child: Stack(
         fit: StackFit.expand,
         children: [
-          Image.asset(
-            'images/plane.jpg',
-            fit: BoxFit.cover,
+          ClipRRect(
+            child: Image.asset(
+              'images/plane.jpg',
+              fit: BoxFit.cover,
+            ),
           ),
-          Container(color: darkColor.withOpacity(0.66)),
+          Container(color: darkColor.withOpacity(0.66),),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
             child: Column(
