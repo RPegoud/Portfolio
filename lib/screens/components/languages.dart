@@ -28,7 +28,7 @@ class Languages extends StatelessWidget {
               child: AnimatedCircularProgress(
                 label: 'English (Toeic)',
                 percentage: 0.95,
-                level: '975 / 990',
+                level: '975',
                 color: Colors.greenAccent.shade400,
               ),
             ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/constants.dart';
+import 'package:portfolio/responsive.dart';
 import 'package:portfolio/screens/main_screen.dart';
 
 import '../components/homeBanner.dart';
@@ -29,10 +30,20 @@ class HomeScreen extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: defaultPadding),
           child: Column(
             children: [
+              Responsive.isDesktop(context) ?
               Text(
                 'Discover my projects',
-                style: Theme.of(context).textTheme.headline6!.copyWith(
-                      fontSize: 35,
+                style: Theme.of(context).textTheme.headline3!.copyWith(
+                      // fontSize: 35,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white
+                    ),
+              ) : Text(
+                'Discover my projects',
+                style: Theme.of(context).textTheme.headline5!.copyWith(
+                      // fontSize: 35,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white
                     ),
               ),
               ProjectCards(
