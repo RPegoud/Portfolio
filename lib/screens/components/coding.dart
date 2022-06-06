@@ -23,10 +23,10 @@ class Coding extends StatelessWidget {
           label: 'Python',
           level: 'Advanced',
           color: Colors.greenAccent.shade400,
-          percentage: 0.75,
+          percentage: 0.8,
         ),
         AnimatedLinearProgress(
-          label: 'R',
+          label: 'Flutter',
           level: 'Proficient',
           color: Colors.orangeAccent.shade400,
           percentage: 0.7,
@@ -38,7 +38,7 @@ class Coding extends StatelessWidget {
           percentage: 0.65,
         ),
         const AnimatedLinearProgress(
-          label: 'Flutter',
+          label: 'R',
           level: 'Intermediate',
           color: primaryColor,
           percentage: 0.55,

@@ -21,24 +21,28 @@ class HomeBanner extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-          Container(color: darkColor.withOpacity(0.66),),
+          Container(
+            color: darkColor.withOpacity(0.66),
+          ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Responsive.isDesktop(context)
-                    ? Text(
-                        'Welcome on my portfolio !',
-                        style: Theme.of(context).textTheme.headline3!.copyWith(
-                            fontWeight: FontWeight.bold, color: Colors.white),
-                      )
-                    : Text(
-                        'Welcome on my portfolio !',
-                        style: Theme.of(context).textTheme.headline4!.copyWith(
-                            fontWeight: FontWeight.bold, color: Colors.white),
-                      ),
+                if (MediaQuery.of(context).size.width >= 700)
+                  Text(
+                    'Welcome on my portfolio !',
+                    style: Theme.of(context).textTheme.headline3!.copyWith(
+                        fontWeight: FontWeight.bold, color: Colors.white),
+                  ),
+                if (Responsive.isMobileLarge(context) ||
+                    Responsive.isMobile(context))
+                  Text(
+                    'Welcome on my portfolio !',
+                    style: Theme.of(context).textTheme.headline6!.copyWith(
+                        fontWeight: FontWeight.bold, color: Colors.white),
+                  ),
                 if (MediaQuery.of(context).size.width >= 700)
                   CodeAnimatedText(
                     language: "python",
@@ -53,18 +57,19 @@ class HomeBanner extends StatelessWidget {
                     color: primaryLightBlue,
                   ),
                 const SizedBox(height: defaultPadding * 2),
-                ElevatedButton(
-                  onPressed: () {},
-                  child: const Text(
-                    'Contact me',
-                  ),
-                  style: TextButton.styleFrom(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: defaultPadding * 2,
-                        vertical: defaultPadding,
-                      ),
-                      backgroundColor: primaryLightBlue),
-                )
+                if (!Responsive.isMobile(context))
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: const Text(
+                      'Contact me',
+                    ),
+                    style: TextButton.styleFrom(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: defaultPadding * 2,
+                          vertical: defaultPadding,
+                        ),
+                        backgroundColor: primaryLightBlue),
+                  )
               ],
             ),
           )

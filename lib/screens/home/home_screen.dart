@@ -30,27 +30,28 @@ class HomeScreen extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: defaultPadding),
           child: Column(
             children: [
-              Responsive.isDesktop(context) ?
-              Text(
-                'Discover my projects',
-                style: Theme.of(context).textTheme.headline3!.copyWith(
-                      // fontSize: 35,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white
+              Responsive.isDesktop(context)
+                  ? Text(
+                      'Discover my projects',
+                      style: Theme.of(context).textTheme.headline3!.copyWith(
+                          // fontSize: 35,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white),
+                    )
+                  : Text(
+                      'Discover my projects',
+                      style: Theme.of(context).textTheme.headline5!.copyWith(
+                          // fontSize: 35,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white),
                     ),
-              ) : Text(
-                'Discover my projects',
-                style: Theme.of(context).textTheme.headline5!.copyWith(
-                      // fontSize: 35,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white
-                    ),
-              ),
               ProjectCards(
                   mainPageScrollController: mainPageScrollController,
                   listViewScrollController: listViewScrollController),
               const Divider(),
-              RecommandationListView(recommendationScrollController: recommendationScrollController),
+              RecommandationListView(
+                  recommendationScrollController:
+                      recommendationScrollController),
             ],
           ),
         ),

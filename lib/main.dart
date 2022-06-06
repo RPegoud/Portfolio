@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:portfolio/constants.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/screens/home/home_screen.dart';
@@ -6,6 +7,10 @@ import 'package:portfolio/screens/home/home_screen.dart';
 import 'scrollBehaviour.dart';
 
 void main() {
+WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations(
+      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
+
   runApp(const MyApp());
 }
 
