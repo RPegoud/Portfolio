@@ -45,9 +45,13 @@ class HomeScreen extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                           color: Colors.white),
                     ),
-              ProjectCards(
-                  mainPageScrollController: mainPageScrollController,
-                  listViewScrollController: listViewScrollController),
+              MediaQuery.of(context).size.width > 700
+                  ? ProjectCards(
+                      mainPageScrollController: mainPageScrollController,
+                      listViewScrollController: listViewScrollController)
+                  : ProjectCardsMobile(
+                      mainPageScrollController: mainPageScrollController,
+                      listViewScrollController: listViewScrollController),
               const Divider(),
               RecommandationListView(
                   recommendationScrollController:

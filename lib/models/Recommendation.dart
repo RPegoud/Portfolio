@@ -27,18 +27,15 @@ dedication and motivation.'''),
       name: 'Lorem',
       source: 'Recommendation',
       body:
-          '''Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum, dolor sit amet interdum efficitur, felis augue lobortis mauris, eget vulputate ante lacus vitae nisi. Nullam ac leo in nunc feugiat convallis lacinia non massa. 
-          Donec ornare, orci et semper condimentum, enim lectus convallis eros, a tincidunt sapien nulla eget neque.'''),
+          '''Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum, dolor sit amet interdum efficitur, felis augue lobortis mauris, eget vulputate ante lacus vitae nisi. Nullam ac leo in nunc feugiat convallis lacinia non massa. Donec ornare, orci et semper condimentum, enim lectus convallis eros, a tincidunt sapien nulla eget neque.'''),
   Recommendation(
       name: 'Lorem',
       source: 'Recommendation',
       body:
-          '''Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum, dolor sit amet interdum efficitur, felis augue lobortis mauris, eget vulputate ante lacus vitae nisi. Nullam ac leo in nunc feugiat convallis lacinia non massa. 
-          Donec ornare, orci et semper condimentum, enim lectus convallis eros, a tincidunt sapien nulla eget neque.'''),
+          '''Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum, dolor sit amet interdum efficitur, felis augue lobortis mauris, eget vulputate ante lacus vitae nisi. Nullam ac leo in nunc feugiat convallis lacinia non massa. Donec ornare, orci et semper condimentum, enim lectus convallis eros, a tincidunt sapien nulla eget neque.'''),
   Recommendation(
       name: 'Lorem',
       source: 'Recommendation',
       body:
-          '''Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum, dolor sit amet interdum efficitur, felis augue lobortis mauris, eget vulputate ante lacus vitae nisi. Nullam ac leo in nunc feugiat convallis lacinia non massa. 
-          Donec ornare, orci et semper condimentum, enim lectus convallis eros, a tincidunt sapien nulla eget neque.''')
+          '''Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum, dolor sit amet interdum efficitur, felis augue lobortis mauris, eget vulputate ante lacus vitae nisi. Nullam ac leo in nunc feugiat convallis lacinia non massa. Donec ornare, orci et semper condimentum, enim lectus convallis eros, a tincidunt sapien nulla eget neque.'''),
 ];

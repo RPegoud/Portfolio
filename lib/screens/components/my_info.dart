@@ -24,7 +24,7 @@ class MyInfo extends StatelessWidget {
             const Spacer(),
             Text(
               'Ryan Pégoud',
-              style: Theme.of(context).textTheme.subtitle2,
+              style: Theme.of(context).textTheme.subtitle1,
             ),
             const Text(
               'Data Engineering Student\nat EPF Montpellier',
