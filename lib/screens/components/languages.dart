@@ -38,7 +38,7 @@ class Languages extends StatelessWidget {
               const Expanded(
                 child: AnimatedCircularProgress(
                   label: 'German',
-                  percentage: 0.75,
+                  percentage: 0.7,
                   level: 'B2',
                   color: primaryColor,
                 ),

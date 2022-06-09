@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/responsive.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../../constants.dart';
 import 'coded_text.dart';
 
@@ -59,7 +60,9 @@ class HomeBanner extends StatelessWidget {
                 const SizedBox(height: defaultPadding * 2),
                 if (!Responsive.isMobile(context))
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      launch('mailto:ryan.pegoud@epfedu.fr?subject=Portfolio contact');
+                    },
                     child: const Text(
                       'Contact me',
                     ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 class Socials extends StatelessWidget {
@@ -26,7 +27,9 @@ class Socials extends StatelessWidget {
               },
               icon: SvgPicture.asset("icons/linkedin.svg")),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              launch('mailto:ryan.pegoud@epfedu.fr?subject=Portfolio contact');
+            },
             icon: const Icon(
               Icons.mail_rounded,
               color: Color(0xFF8C8C8E),
