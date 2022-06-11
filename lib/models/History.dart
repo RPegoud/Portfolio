@@ -22,6 +22,8 @@ List<History> historyList = [
     description: [
       'Natural Language Processing, data analysis, model selection and validation',
       'Research, implementation of advanced ML techniques such as temperature scaling for neural networks',
+      'Aspect Based Sentiment analysis, getting insights from customer reviews',
+      'Result : Creation of a multilingual classification model (93% accuracy) currently used in production',
     ],
   ),
   History(

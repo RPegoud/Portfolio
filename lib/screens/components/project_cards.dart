@@ -51,7 +51,7 @@ class ProjectCards extends StatelessWidget {
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(14.0),
                                 child: ChangeColors(
-                                  brightness: -0.0001,
+                                  brightness: -0.0002,
                                   child: Image(
                                     image: AssetImage(
                                         projects_list[index].imagePath),
@@ -175,7 +175,7 @@ class ProjectCardsMobile extends StatelessWidget {
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(14.0),
                                 child: ChangeColors(
-                                  brightness: -0.0001,
+                                  brightness: -0.0002,
                                   child: Image(
                                     image: AssetImage(
                                         projects_list[index].imagePath),

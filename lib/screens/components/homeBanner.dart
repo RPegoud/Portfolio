@@ -21,9 +21,10 @@ class HomeBanner extends StatelessWidget {
               'images/landscape.jpg',
               fit: BoxFit.cover,
             ),
+            borderRadius: BorderRadius.circular(defaultPadding),
           ),
           Container(
-            color: darkColor.withOpacity(0.66),
+            color: darkColor.withOpacity(0.1),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
