@@ -27,22 +27,10 @@ List<Project> projects_list = [
           'Data analysis, NLP classification using Bert and Aspect Base Sentiment Analysis',
       imagePath: 'images/CEWE-logo.jpg',
       link: ''),
-  Project(
-      title: 'Data science workflow',
+        Project(
+      title: 'Appointment Web App',
       description:
-          'API calls, exploration, cleaning, Model selection and validation',
-      imagePath: 'images/spotify.jpg',
-      link: ''),
-  Project(
-    title: 'Fitness and nutrition App',
-    description: 'Building an interactive fitness app with Flutter',
-    imagePath: 'images/nutrition.jpg',
-    link: 'https://github.com/RPegoud/App_project',
-  ),
-  Project(
-      title: 'Data Science Internship',
-      description:
-          'Data analysis, NLP classification using Bert and Aspect Base Sentiment Analysis',
-      imagePath: 'images/CEWE-logo.jpg',
+          'Appointment website, database storage, responsive dashboard',
+      imagePath: 'images/appointment.png',
       link: ''),
 ];

@@ -18,7 +18,7 @@ class HomeBanner extends StatelessWidget {
         children: [
           ClipRRect(
             child: Image.asset(
-              'images/plane.jpg',
+              'images/landscape.jpg',
               fit: BoxFit.cover,
             ),
           ),
@@ -59,19 +59,25 @@ class HomeBanner extends StatelessWidget {
                   ),
                 const SizedBox(height: defaultPadding * 2),
                 if (!Responsive.isMobile(context))
-                  ElevatedButton(
+                  ElevatedButton.icon(
+                    icon: const Icon(Icons.email),
                     onPressed: () {
-                      launch('mailto:ryan.pegoud@epfedu.fr?subject=Portfolio contact');
+                      launch(
+                          'mailto:ryan.pegoud@epfedu.fr?subject=Portfolio contact');
                     },
-                    child: const Text(
+                    label : const Text(
                       'Contact me',
                     ),
                     style: TextButton.styleFrom(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: defaultPadding * 2,
-                          vertical: defaultPadding,
-                        ),
-                        backgroundColor: primaryLightBlue),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: defaultPadding * 2,
+                        vertical: defaultPadding,
+                      ),
+                      backgroundColor: primaryMidBlue,
+                    ),
                   )
               ],
             ),
