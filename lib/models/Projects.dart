@@ -8,7 +8,7 @@ class Project {
       required this.link});
 }
 
-List<Project> projects_list = [
+List<Project> projectsList = [
   Project(
       title: 'Data science workflow',
       description:

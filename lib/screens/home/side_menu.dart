@@ -27,6 +27,7 @@ class SideMenu extends StatelessWidget {
                 children: const [
                   AreaInfoText(title: 'Location', text: 'France'),
                   AreaInfoText(title: 'City', text: 'Montpellier'),
+                  AreaInfoText(title: 'Nationality', text: 'French / German'),
                   AreaInfoText(title: 'Age', text: '22'),
                   Divider(),
                   Languages(),

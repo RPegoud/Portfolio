@@ -30,7 +30,7 @@ List<History> historyList = [
     title: 'Freelance web programming',
     description: [
       'Website development, database management, responsive design',
-      'Creation of a visualization tool for professionals to track their appointments',
+      'Creation of a clientside booking website and a responsive dashboard for the company',
     ],
   ),
 ];

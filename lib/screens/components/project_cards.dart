@@ -34,14 +34,14 @@ class ProjectCards extends StatelessWidget {
                   physics: const AlwaysScrollableScrollPhysics(),
                   shrinkWrap: true,
                   controller: listViewScrollController,
-                  itemCount: projects_list.length,
+                  itemCount: projectsList.length,
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (BuildContext context, int index) {
                     return Padding(
                       padding: const EdgeInsets.all(20),
                       child: InkWell(
                         onTap: () {
-                          launchUrlString(projects_list[index].link);
+                          launchUrlString(projectsList[index].link);
                         },
                         child: Stack(
                           children: <Widget>[
@@ -54,7 +54,7 @@ class ProjectCards extends StatelessWidget {
                                   brightness: -0.0002,
                                   child: Image(
                                     image: AssetImage(
-                                        projects_list[index].imagePath),
+                                        projectsList[index].imagePath),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -77,7 +77,7 @@ class ProjectCards extends StatelessWidget {
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: <Widget>[
                                       Text(
-                                        projects_list[index].title,
+                                        projectsList[index].title,
                                         overflow: TextOverflow.visible,
                                         style: const TextStyle(
                                           fontSize: 22.0,
@@ -94,7 +94,7 @@ class ProjectCards extends StatelessWidget {
                                           padding: const EdgeInsets.symmetric(
                                               horizontal: defaultPadding / 2),
                                           child: Text(
-                                            projects_list[index].description,
+                                            projectsList[index].description,
                                             style: const TextStyle(
                                                 color: Colors.white,
                                                 fontSize: 14.0),
@@ -158,14 +158,14 @@ class ProjectCardsMobile extends StatelessWidget {
                   physics: const AlwaysScrollableScrollPhysics(),
                   shrinkWrap: true,
                   controller: listViewScrollController,
-                  itemCount: projects_list.length,
+                  itemCount: projectsList.length,
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (BuildContext context, int index) {
                     return Padding(
                       padding: const EdgeInsets.all(10),
                       child: InkWell(
                         onTap: () {
-                          launchUrlString(projects_list[index].link);
+                          launchUrlString(projectsList[index].link);
                         },
                         child: Stack(
                           children: <Widget>[
@@ -178,7 +178,7 @@ class ProjectCardsMobile extends StatelessWidget {
                                   brightness: -0.0002,
                                   child: Image(
                                     image: AssetImage(
-                                        projects_list[index].imagePath),
+                                        projectsList[index].imagePath),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -200,7 +200,7 @@ class ProjectCardsMobile extends StatelessWidget {
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     children: <Widget>[
                                       Text(
-                                        projects_list[index].title,
+                                        projectsList[index].title,
                                         overflow: TextOverflow.ellipsis,
                                         style: const TextStyle(
                                           fontSize: 17.0,
@@ -213,7 +213,7 @@ class ProjectCardsMobile extends StatelessWidget {
                                         height: 60,
                                         width: 150,
                                         child: Text(
-                                          projects_list[index].description,
+                                          projectsList[index].description,
                                           style: const TextStyle(
                                               color: Colors.white,
                                               fontSize: 13.0),
