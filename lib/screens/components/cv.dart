@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:native_pdf_view/native_pdf_view.dart';
-
 import '../../constants.dart';
 
 class Cv extends StatelessWidget {
@@ -14,7 +12,6 @@ class Cv extends StatelessWidget {
       padding: const EdgeInsets.all(defaultPadding / 2),
       child: TextButton(
         onPressed: () {
-          PdfDocument.openFile('assets/pdf/cv.pdf');
         },
         child: FittedBox(
           child: Row(

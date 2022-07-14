@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:themed/themed.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 import '../../constants.dart';
 import '../../models/Projects.dart';
@@ -50,13 +49,10 @@ class ProjectCards extends StatelessWidget {
                               width: 320,
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(14.0),
-                                child: ChangeColors(
-                                  brightness: -0.0002,
-                                  child: Image(
-                                    image: AssetImage(
-                                        projectsList[index].imagePath),
-                                    fit: BoxFit.cover,
-                                  ),
+                                child: Image(
+                                  image:
+                                      AssetImage(projectsList[index].imagePath),
+                                  fit: BoxFit.cover,
                                 ),
                               ),
                             ),
@@ -174,13 +170,10 @@ class ProjectCardsMobile extends StatelessWidget {
                               width: 250,
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(14.0),
-                                child: ChangeColors(
-                                  brightness: -0.0002,
-                                  child: Image(
-                                    image: AssetImage(
-                                        projectsList[index].imagePath),
-                                    fit: BoxFit.cover,
-                                  ),
+                                child: Image(
+                                  image:
+                                      AssetImage(projectsList[index].imagePath),
+                                  fit: BoxFit.cover,
                                 ),
                               ),
                             ),
@@ -196,12 +189,14 @@ class ProjectCardsMobile extends StatelessWidget {
                                   padding: const EdgeInsets.symmetric(
                                       vertical: defaultPadding / 2),
                                   child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     children: <Widget>[
                                       Text(
                                         projectsList[index].title,
                                         overflow: TextOverflow.ellipsis,
+                                        textAlign: TextAlign.center,
                                         style: const TextStyle(
                                           fontSize: 17.0,
                                           color: Colors.white,

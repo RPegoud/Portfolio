@@ -122,7 +122,7 @@ class RecommendationCardMobile extends StatelessWidget {
                         name: name,
                         source: source,
                         body: body,
-                        height: 350,
+                        height: 450,
                       );
                     },
                   );
@@ -185,41 +185,29 @@ class RecommendationSheetContainer extends StatelessWidget {
                                 .headline4!
                                 .copyWith(color: primaryColor),
                           ),
-                    Responsive.isDesktop(context)
-                        ? Text(
-                            source,
-                            style: Theme.of(context)
-                                .textTheme
-                                .subtitle1!
-                                .copyWith(color: Colors.white),
-                          )
-                        : Text(
-                            source,
-                            style: Theme.of(context)
-                                .textTheme
-                                .subtitle2!
-                                .copyWith(color: Colors.white),
-                          ),
+                    // Responsive.isDesktop(context)
+                    Text(
+                      source,
+                      style: Theme.of(context)
+                          .textTheme
+                          .subtitle1!
+                          .copyWith(color: Colors.white),
+                    ),
+
                     const SizedBox(height: defaultPadding),
-                    Responsive.isDesktop(context)
-                        ? Text(
-                            body,
-                            style: const TextStyle(
-                                color: Colors.white, fontSize: 15),
-                          )
-                        : Text(
-                            body,
-                            style: const TextStyle(color: Colors.white),
-                          ),
+                    Text(
+                      body,
+                      style: const TextStyle(color: Colors.white, fontSize: 17),
+                    )
                   ],
                 ),
               ),
               const SizedBox(height: defaultPadding),
               ElevatedButton(
-                child: const Text('Close'),
+                child: const Text('Close', style: TextStyle(fontSize: 20)),
                 onPressed: () => Navigator.pop(context),
                 style: ElevatedButton.styleFrom(
-                  primary: primaryColor,
+                  backgroundColor: primaryColor,
                   elevation: 3,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
