@@ -40,7 +40,8 @@ class AnimatedCircularProgress extends StatelessWidget {
                 Center(
                   child: Text(
                     level,
-                    style: Theme.of(context).textTheme.subtitle1,
+                    style: Theme.of(context).textTheme.subtitle2,
+                    textAlign: TextAlign.center,
                   ),
                 )
               ],

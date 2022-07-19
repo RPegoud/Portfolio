@@ -10,7 +10,7 @@ class History {
 
 List<History> historyList = [
   History(
-    title: '[Ongoing] EPF Data Engineering Major',
+    title: '[Ongoing] EPF : Data Science master',
     description: [
       'Maths for Computer science : Linear Algebra, Statistics, Numerical optimization',
       'Data science tools : Virtualization, Data analysis and visualization, Machine learning',

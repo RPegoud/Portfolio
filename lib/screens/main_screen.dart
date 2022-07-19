@@ -6,14 +6,23 @@ import 'package:url_launcher/url_launcher.dart';
 import 'home/side_menu.dart';
 
 class MainScreen extends StatelessWidget {
-  const MainScreen({Key? key, required this.children}) : super(key: key);
+  MainScreen({Key? key, required this.children}) : super(key: key);
 
   final List<Widget> children;
 
+  final scaffoldKey = GlobalKey<
+      ScaffoldState>(); // used to access the scaffold context within the title Inkwell
+
   @override
   Widget build(BuildContext context) {
+    
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (Responsive.isMobile(context))  scaffoldKey.currentState!.openDrawer();
+    });
+
     return SafeArea(
       child: Scaffold(
+        key: scaffoldKey,
         appBar: Responsive.isDesktop(context)
             ? null
             : AppBar(
@@ -26,12 +35,17 @@ class MainScreen extends StatelessWidget {
                         },
                       )),
                 ),
-                title: Text(
-                  '<Profile />',
-                  style: Theme.of(context)
-                      .textTheme
-                      .subtitle1!
-                      .copyWith(fontSize: 20),
+                title: InkWell(
+                  onTap: () {
+                    scaffoldKey.currentState!.openDrawer();
+                  },
+                  child: Text(
+                    '<Profile />',
+                    style: Theme.of(context)
+                        .textTheme
+                        .subtitle1!
+                        .copyWith(fontSize: 20),
+                  ),
                 ),
                 actions: [
                   Padding(
