@@ -24,7 +24,7 @@ class CodeAnimatedText extends StatelessWidget {
           const SizedBox(
             width: defaultPadding,
           ),
-          const Text('My skills : '),
+          // const Text('My skills : '),
           AnimatedTextKit(
             totalRepeatCount: 1,
             animatedTexts: [
@@ -65,7 +65,7 @@ class CodedText extends StatelessWidget {
             style: TextStyle(color: color),
           ),
           const TextSpan(
-            text: "> ",
+            text: "/> ",
           )
         ],
       ),

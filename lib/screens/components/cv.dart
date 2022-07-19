@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../constants.dart';
 
 class Cv extends StatelessWidget {
@@ -12,7 +11,8 @@ class Cv extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(defaultPadding / 2),
       child: TextButton(
-        onPressed: () {},
+        onPressed: () {
+        },
         child: FittedBox(
           child: Row(
             children: [
@@ -28,7 +28,7 @@ class Cv extends StatelessWidget {
                 color: primaryGrey,
               )
             ],
-          ),
+          ),  
         ),
       ),
     );

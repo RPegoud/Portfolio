@@ -8,7 +8,7 @@ class MyInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 1.35,
+      aspectRatio: 1.05,
       child: Container(
         color: const Color(0xFF242430),
         child: Column(
@@ -24,7 +24,7 @@ class MyInfo extends StatelessWidget {
             const Spacer(),
             Text(
               'Ryan Pégoud',
-              style: Theme.of(context).textTheme.subtitle2,
+              style: Theme.of(context).textTheme.subtitle1,
             ),
             const Text(
               'Data Engineering Student\nat EPF Montpellier',

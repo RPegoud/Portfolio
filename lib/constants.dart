@@ -15,4 +15,4 @@ const primaryGrey = Color(0xffCCCBC6);
 
 const defaultPadding = 15.0;
 const defaultDuration = Duration(seconds: 1);
-const maxWidth = 1440.0;
+const maxWidth = 2000.0;
