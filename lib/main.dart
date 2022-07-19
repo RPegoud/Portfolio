@@ -3,14 +3,17 @@ import 'package:flutter/services.dart';
 import 'package:portfolio/constants.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/screens/home/home_screen.dart';
-
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 import 'scrollBehaviour.dart';
 
-void main() {
-WidgetsFlutterBinding.ensureInitialized();
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations(
       [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
-
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
