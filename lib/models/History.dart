@@ -18,19 +18,28 @@ List<History> historyList = [
     ],
   ),
   History(
-    title: 'Data science internship',
+    title: 'Summer fixed-term contract (6 wk) by CEWE',
     description: [
-      'Natural Language Processing, data analysis, model selection and validation',
-      'Research, implementation of advanced ML techniques such as temperature scaling for neural networks',
-      'Aspect Based Sentiment analysis, getting insights from customer reviews',
-      'Result : Creation of a multilingual classification model (93% accuracy) currently used in production',
+      'Aspect based Sentiment analysis: getting insights from customer reviews (classification / sentiment analysis)',
+      'Timeseries prediction using Neural Prophet: predicting the number of incoming calls and emails to optimize staff schedules'
+      ],
+  ),
+  History(
+    title: 'Data science internship (6 mos) by CEWE',
+    description: [
+      'Data exploration, model selection and validation',
+      'Natural Language Processing, multilingual classification, clustering, active learning',
+      'Implementation of advanced ML techniques such as temperature scaling for neural networks',
+      'Creation of an active learning web application',
+      'Result : Creation of a multilingual classification model (93% F1-score) currently used in production',
     ],
   ),
   History(
     title: 'Freelance web programming',
     description: [
       'Website development, database management, responsive design',
-      'Creation of a clientside booking website and a responsive dashboard for the company',
+      'Development of portfolio webiste for health professionals',
+      'Creation of booking websites (userside) and responsive dashboards (clientside)',
     ],
   ),
 ];

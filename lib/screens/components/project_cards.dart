@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher_string.dart';
 import '../../constants.dart';
 import '../../models/Projects.dart';
 
@@ -40,7 +39,7 @@ class ProjectCards extends StatelessWidget {
                       padding: const EdgeInsets.all(20),
                       child: InkWell(
                         onTap: () {
-                          launchUrlString(projectsList[index].link);
+                          // launchUrlString(projectsList[index].link);
                         },
                         child: Stack(
                           children: <Widget>[
@@ -161,7 +160,7 @@ class ProjectCardsMobile extends StatelessWidget {
                       padding: const EdgeInsets.all(10),
                       child: InkWell(
                         onTap: () {
-                          launchUrlString(projectsList[index].link);
+                          // launchUrlString(projectsList[index].link);
                         },
                         child: Stack(
                           children: <Widget>[

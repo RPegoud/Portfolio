@@ -4,7 +4,7 @@ import 'package:portfolio/responsive.dart';
 import 'package:portfolio/screens/components/history_tiles.dart';
 import 'package:portfolio/screens/main_screen.dart';
 
-import '../components/homeBanner.dart';
+import '../components/home_banner.dart';
 import '../components/project_cards.dart';
 import '../components/recommendation_card.dart';
 
