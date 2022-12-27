@@ -62,7 +62,7 @@ class CodedText extends StatelessWidget {
         children: [
           TextSpan(
             text: language,
-            style: TextStyle(color: color),
+            style: TextStyle(color: color, fontWeight: FontWeight.bold, fontSize: 19),
           ),
           const TextSpan(
             text: "/> ",

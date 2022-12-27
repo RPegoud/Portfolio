@@ -10,6 +10,13 @@ class History {
 
 List<History> historyList = [
   History(
+    title: 'BMW - Intern in Digital Fleet Management',
+    description: [
+      'Time series / sequence-based anomalies for individual vehicles',
+      'Definition of optimality criterion, implementation of hyperparameter search'
+    ],
+  ),
+  History(
     title: '[Ongoing] EPF : Data Science master',
     description: [
       'Maths for Computer science : Linear Algebra, Statistics, Numerical optimization',
@@ -18,14 +25,14 @@ List<History> historyList = [
     ],
   ),
   History(
-    title: 'Summer fixed-term contract (6 wk) by CEWE',
+    title: 'CEWE - Summer fixed-term contract (6 wk)',
     description: [
       'Aspect based Sentiment analysis: getting insights from customer reviews (classification / sentiment analysis)',
       'Timeseries prediction using Neural Prophet: predicting the number of incoming calls and emails to optimize staff schedules'
-      ],
+    ],
   ),
   History(
-    title: 'Data science internship (6 mos) by CEWE',
+    title: 'CEWE - Data science internship (6 mth)',
     description: [
       'Data exploration, model selection and validation',
       'Natural Language Processing, multilingual classification, clustering, active learning',
