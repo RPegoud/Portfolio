@@ -10,10 +10,12 @@ class History {
 
 List<History> historyList = [
   History(
-    title: 'BMW - Intern in Digital Fleet Management',
+    title:
+        '[Ongoing] BMW : Data Scientist intern - Digital Fleet Management (6 mth)',
     description: [
-      'Time series / sequence-based anomalies for individual vehicles',
-      'Definition of optimality criterion, implementation of hyperparameter search'
+      'Time series / sequence-based anomaly detection',
+      'Implementation of Markov chains, LSTMs and Deep Autoencoders',
+      'Clustering using Gradient Boosting algorithms (XGBoost, LightGBM)'
     ],
   ),
   History(
