@@ -10,20 +10,34 @@ class History {
 
 List<History> historyList = [
   History(
+    title: '[Ongoing] University of Alberta: Reinforcement Learning curriculum',
+    description: [
+      '4 months online degree pursued on Coursera',
+      'Section 1: Bandits, Markov Decision Processes, Bellman Equation, Dynamic programming',
+      'Section 2: Monte Carlo methods, Temporal Difference Learning, Q-learning, Dyna-Q',
+      '[Ongoing] Section 3: Function approximation, Deep RL, Policy gradient, Actor-critic',
+      '[Incoming] Section 4: Capstone project'
+    ],
+  ),
+  History(
     title:
         '[Ongoing] BMW : Data Scientist intern - Digital Fleet Management (6 mth)',
     description: [
-      'Time series / sequence-based anomaly detection',
-      'Implementation of Markov chains, LSTMs and Deep Autoencoders',
-      'Clustering using Gradient Boosting algorithms (XGBoost, LightGBM)'
+      'Designed and trained a connectivity forecasting model, with an average error of 1%',
+      'Allowed to predict the expected amount of connections for the next day',
+      'Designed and implemented a new approach to anomaly detection relying on a single connectivity channel (previously two)',
+      'Allowed to detect anomalies lasting a least 10 minutes (previously 24 hours)',
+      '[Ongoing] Deployment of the anomaly detection model on AWS'
     ],
   ),
   History(
     title: '[Ongoing] EPF : Data Science master',
     description: [
+      '[Top grades] Artificial Intelligence: Machine learning, Deep learning, NLP, Time series forecasting, Computer vision',
       'Maths for Computer science : Linear Algebra, Statistics, Numerical optimization',
-      'Data science tools : Virtualization, Data analysis and visualization, Machine learning',
-      'Management : Team management, continuous integration, conflict resolution'
+      'Data science tools : Virtualization, Data analysis and visualization',
+      'Devops: Versioning, CI/CD, conflict resolution',
+      'Management : Team management, Scrum methodology'
     ],
   ),
   History(

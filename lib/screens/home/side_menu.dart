@@ -24,10 +24,10 @@ class SideMenu extends StatelessWidget {
               padding: const EdgeInsets.all(defaultPadding),
               child: Column(
                 children: const [
-                  AreaInfoText(title: 'Location', text: 'France'),
-                  AreaInfoText(title: 'City', text: 'Montpellier'),
+                  AreaInfoText(title: 'Location', text: 'Germany'),
+                  AreaInfoText(title: 'City', text: 'Munich'),
                   AreaInfoText(title: 'Nationality', text: 'French / German'),
-                  AreaInfoText(title: 'Age', text: '22'),
+                  AreaInfoText(title: 'Age', text: '23'),
                   Divider(),
                   Languages(),
                   SizedBox(height: defaultPadding / 3),

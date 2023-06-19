@@ -74,14 +74,18 @@ class ProjectCards extends StatelessWidget {
                                         CrossAxisAlignment.center,
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: <Widget>[
-                                      Text(
-                                        projectsList[index].title,
-                                        overflow: TextOverflow.visible,
-                                        style: const TextStyle(
-                                          fontSize: 22.0,
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
-                                          letterSpacing: 1.6,
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(
+                                            horizontal: defaultPadding),
+                                        child: Text(
+                                          projectsList[index].title,
+                                          overflow: TextOverflow.visible,
+                                          style: const TextStyle(
+                                            fontSize: 22.0,
+                                            color: Colors.white,
+                                            fontWeight: FontWeight.bold,
+                                            letterSpacing: 1.6,
+                                          ),
                                         ),
                                       ),
                                       const SizedBox(height: 10.0),

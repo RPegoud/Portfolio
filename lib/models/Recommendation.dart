@@ -10,7 +10,7 @@ class Recommendation {
 
 final List<Recommendation> recommendation_list = [
   Recommendation(
-      name: 'Cornelius Steinbrink',
+      name: 'Cewe - Cornelius Steinbrink',
       source: 'Data scientist (summer job)',
       body:
           '''I had the pleasure of supervising Ryan while he was working for our data analytics team at CEWE as a student trainee. 

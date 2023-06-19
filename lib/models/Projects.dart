@@ -13,10 +13,10 @@ class Project {
 
 List<Project> projectsList = [
   Project(
-      title: 'Fitness and nutrition App',
-      description: 'Building an interactive fitness app with Flutter',
-      imagePath: 'images/healthbar.png',
-      link: 'https://nutrition-web-app.web.app/#/',
+      title: 'Reinforcement Learning blog',
+      description: 'Documenting my learnings and coding projects in RL',
+      imagePath: 'images/boxing_robots.jpg',
+      link: 'https://rpegoud.github.io/ML_Blog/',
       isWhite: true),
   Project(
       title: 'Traffic Sign Detection',
@@ -26,26 +26,19 @@ List<Project> projectsList = [
   Project(
       title: 'Satelite images analysis',
       description:
-          'Classification of Satelite images, 150h academic project leading to a publication',
+          'Classification of Satelite images using TensorFlow, network calibration, active learning',
       imagePath: 'images/tensorflow.png',
       link: ''),
   Project(
-      title: 'Data Science Internship',
-      description:
-          'Data analysis, NLP classification using Bert, Aspect Base Sentiment Analysis',
-      // imagePath: 'images/CEWE-logo.jpg',
-      imagePath: 'images/corporate.jpg',
-      link: ''),
+      title: 'Fitness and nutrition App',
+      description: 'Building an interactive fitness app with Flutter',
+      imagePath: 'images/healthbar.png',
+      link: 'https://nutrition-web-app.web.app/#/',
+      isWhite: true),
   Project(
       title: 'Portofolio websites',
       description:
           'Design, development and deployment of portfolios for health professionals',
       imagePath: 'images/health.jpg',
-      link: ''),
-  Project(
-      title: 'Appointment Web App',
-      description:
-          'Appointment website, database storage, responsive dashboard',
-      imagePath: 'images/appointment.png',
       link: ''),
 ];
